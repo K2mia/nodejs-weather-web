@@ -27,14 +27,14 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About',
+    title: 'Weather:About',
     header: 'The Weather App About Page',
   });
 });
 
 app.get('/help', (req, res) => {
   res.render('help', {
-    title: 'Weather App Help Page',
+    title: 'Weather:Help',
     header: 'The Weather App Help Page',
   });
 });
