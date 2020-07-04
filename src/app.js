@@ -27,7 +27,7 @@ app.get('', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About Icculus',
+    title: 'About',
     header: 'The Weather App About Page',
   });
 });
