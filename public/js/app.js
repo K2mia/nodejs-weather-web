@@ -24,7 +24,7 @@ weatherForm.addEventListener('submit', (e) => {
 
   document.querySelector('#weather-div').innerHTML = 'Loading...';
 
-  fetch('http://localhost:3000/weather?address=' + search.value).then((res) => {
+  fetch('/weather?address=' + search.value).then((res) => {
     res.json().then((data) => {
       if (data.error) {
         document.querySelector('#weather-div').innerHTML = data.error;
